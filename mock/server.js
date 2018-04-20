@@ -51,6 +51,13 @@ router.post('/api/category/get_category', ctx =>{
     ctx.body = categroyList;
 })
 
+//二级分类数据
+var get_category2 = require('./product/get_category2.js');
+router.post('/api/category/get_category2',ctx =>{
+    console.log("获取二级品类列表数据");
+    ctx.body = get_category2;
+})
+
 //订单列表
 var orderList = require('./order/orderList.js');
 router.post('/api/orderList',ctx =>{
@@ -64,6 +71,28 @@ router.post('/api/orderDetail',ctx =>{
     console.log("订单详情数据");
     ctx.body = orderDetail;
 }) 
+
+//上传图片
+var upload = require('./order/upload.js');
+router.post('/api/product/upload' ,ctx =>{
+    //上传图片
+    ctx.body = upload;
+})
+
+
+//新增商品
+var sava = require('./product/save.js');
+router.post('/api/product/save' ,ctx =>{
+    //新增商品
+    ctx.body = sava;
+})
+
+//富文本上传图片    /api/product/richtext_img_upload
+var richtext_img_upload = require('./product/richtext_img_upload.js');
+router.post('/api/product/richtext_img_upload',ctx =>{
+    //上传成功
+    ctx.body = richtext_img_upload;
+})
 
 //开启服务并访问路由
 app.use(router.routes())

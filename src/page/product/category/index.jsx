@@ -35,7 +35,6 @@ class CategoryList extends React.Component{
     }
     //加载品类列表
     loadCategoryList(){
-        console.log(1234)
         _product.getCategoryList(this.state.parentCategoryId).then(res =>{
             this.setState({
                 list:res

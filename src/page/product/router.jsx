@@ -16,11 +16,11 @@ class ProductRouter extends React.Component{
         return(
             <Switch>
                 <Route path = '/product/index' component={ProductList} />
+                <Route path = '/product/save/:pid?' component={productSave} />
                 <Route path = '/product-category/index/:categoryId?' component={categoryList} />
                 <Redirect exact from="/product" to="product/index" />
                 <Redirect exact from="/product-category" to="/product-category/index" />
-                {/*<Route path = '/product/sava/:pid' component={productSave} />
-                <Route path = '/product/detail/:pid' component={prodcutDetail} />
+                {/*<Route path = '/product/detail/:pid' component={prodcutDetail} />
                 <Route path = '/productCategory/index/:categoryId' component={categoryList} />
                 <Route path = '/productCategory/add' component={categoryAdd} />
                 <Redirect exact from="/product" to="/product/index" />

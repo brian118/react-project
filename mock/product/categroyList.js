@@ -4,7 +4,7 @@ module.exports = {
         {
             "id": 100001,
             "parentId": 0,
-            "name": "3333333333333333333",
+            "name": "鸡蛋",
             "status": true,
             "sortOrder": null,
             "createTime": 1490431560000,
@@ -13,7 +13,7 @@ module.exports = {
         {
             "id": 100002,
             "parentId": 0,
-            "name": "3333333333333333333",
+            "name": "苹果",
             "status": true,
             "sortOrder": null,
             "createTime": 1490431560000,
@@ -22,7 +22,7 @@ module.exports = {
         {
             "id": 100003,
             "parentId": 0,
-            "name": "3333333333333333333",
+            "name": "香蕉",
             "status": true,
             "sortOrder": null,
             "createTime": 1490431560000,
@@ -31,7 +31,7 @@ module.exports = {
         {
             "id": 100004,
             "parentId": 0,
-            "name": "3333333333333333333",
+            "name": "桔子",
             "status": true,
             "sortOrder": null,
             "createTime": 1490431560000,
@@ -40,7 +40,7 @@ module.exports = {
         {
             "id": 100005,
             "parentId": 0,
-            "name": "3333333333333333333",
+            "name": "橙子",
             "status": true,
             "sortOrder": null,
             "createTime": 1490431560000,
@@ -49,7 +49,7 @@ module.exports = {
         {
             "id": 100006,
             "parentId": 0,
-            "name": "3333333333333333333",
+            "name": "哈密瓜",
             "status": true,
             "sortOrder": null,
             "createTime": 1490431560000,
