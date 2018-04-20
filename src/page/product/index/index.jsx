@@ -69,6 +69,23 @@ class ProductList extends React.Component{
             this.loadProductList();
         })
     }
+    //下架
+    setProductStatus(e,productId,currentStatus){
+        let newStatus   = currentStatus == 1 ? 2 : 1,
+        confrimTips = currentStatus == 1 
+            ? '确定要下架该商品？' : '确定要上架该商品？';
+        if(window.confirm(confrimTips)){
+            _product.setProductStatus({
+                productId: productId,
+                status: newStatus
+            }).then(res => {
+                _mm.successTips(res);
+                this.loadProductList();
+            }, errMsg => {
+                _mm.errorTips(res);
+            });
+        }
+    }
     render(){
         let headers = [
             {name:'商品ID',width:'10%'},

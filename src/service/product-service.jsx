@@ -36,7 +36,7 @@ class Product{
     setProductStatus(productInfo){
         return _mm.request({
             type : 'post',
-            url :'/api/set_sale_status',
+            url :'/api/product/set_sale_status',
             data:productInfo
         })
     }

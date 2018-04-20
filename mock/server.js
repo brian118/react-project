@@ -44,6 +44,13 @@ router.post('/api/productList',wtx =>{
     wtx.body = productList;
 })
 
+//下架
+var set_sale_status = require('./product/set_sale_status');
+router.post('/api/product/set_sale_status',wtx =>{
+    console.log("下架商品成功");
+    wtx.body = set_sale_status;
+})
+
 //品类列表
 var categroyList = require('./product/categroyList.js');
 router.post('/api/category/get_category', ctx =>{
